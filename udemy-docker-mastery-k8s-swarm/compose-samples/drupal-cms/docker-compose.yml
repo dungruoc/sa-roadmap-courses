@@ -1,0 +1,23 @@
+services:
+  drupal-cms:
+    image: drupal:9
+    container_name: drupal_cms
+    ports:
+      - 8080:80
+    networks:
+      cms-net:
+  
+  cms-database:
+    image: postgres:14
+    container_name: cms-database
+    environment:
+      - "POSTGRES_PASSWORD=postgres"
+    volumes:
+      - cms-data:/var/lib/postgresql/data
+    networks:
+      cms-net:
+
+networks:
+  cms-net:
+volumes:
+  cms-data:

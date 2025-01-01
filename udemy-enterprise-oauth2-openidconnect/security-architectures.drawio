@@ -1,0 +1,349 @@
+<mxfile host="Electron" modified="2024-12-25T09:32:38.366Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="6Bwdb26vtksQTjFWsx8V" version="21.7.5" type="device" pages="2">
+  <diagram name="Page-1" id="o_UKtq4EXCgfmyv61EWB">
+    <mxGraphModel dx="954" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-16" value="Linkedin Data Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1520" width="470" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-12" value="App Data Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1325" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-15" value="Data Center 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;verticalAlign=bottom;align=left;" parent="1" vertex="1">
+          <mxGeometry x="430" y="400" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-13" value="Organization Data Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="150" y="400" width="150" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-11" value="Authentication Data Center" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="360" y="200" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-10" value="Service Data Center" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
+          <mxGeometry x="360" y="20" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-3" value="Application Data Access Request/&lt;br&gt;Credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-1" target="m4Xngc8BHBEE5lB-nZ08-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-1" value="User/Client" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="110" y="50" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-7" value="check credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-2" target="m4Xngc8BHBEE5lB-nZ08-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-9" value="authorized&lt;br&gt;data access" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-2" target="m4Xngc8BHBEE5lB-nZ08-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-2" value="Service Provider/&lt;br&gt;Application" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="45" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-4" target="m4Xngc8BHBEE5lB-nZ08-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-4" value="Identity Provider" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="380" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-5" value="Identity Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="630" y="230" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-8" value="Application&lt;br&gt;Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="640" y="35" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-17" value="(1) HTTP request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-12" target="m4Xngc8BHBEE5lB-nZ08-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="445" />
+              <mxPoint x="330" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-19" value="&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;(3) redirected HTTP request&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-12" target="m4Xngc8BHBEE5lB-nZ08-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-12" value="User/Client" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="200" y="430" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-14" value="Web Application 2" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-18" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(2) Redirect Application 2&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-16" target="m4Xngc8BHBEE5lB-nZ08-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="466" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-16" value="Web Application 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-20" value="App Data Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="430" y="800" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-21" value="Organization Data Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="150" y="800" width="150" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-22" value="(1) HTTP request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-24" target="m4Xngc8BHBEE5lB-nZ08-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="845" />
+              <mxPoint x="330" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-5" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(6) HTTP request redirected from SAML&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="m4Xngc8BHBEE5lB-nZ08-24" target="m4Xngc8BHBEE5lB-nZ08-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="883" />
+              <mxPoint x="395" y="883" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m4Xngc8BHBEE5lB-nZ08-24" target="m4Xngc8BHBEE5lB-nZ08-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-8" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(3) redirected HTTP request&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PxDoI1PUcP5NgiqhRPwL-7">
+          <mxGeometry x="0.4" y="4" relative="1" as="geometry">
+            <mxPoint x="-64" y="-39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-9" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(4) User login&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m4Xngc8BHBEE5lB-nZ08-24" target="m4Xngc8BHBEE5lB-nZ08-25">
+          <mxGeometry x="0.2857" y="-45" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-24" value="User/Client" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="200" y="830" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="m4Xngc8BHBEE5lB-nZ08-25" target="PxDoI1PUcP5NgiqhRPwL-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-10" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(5) SAML response redirect to App&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.9;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="m4Xngc8BHBEE5lB-nZ08-25" target="m4Xngc8BHBEE5lB-nZ08-24">
+          <mxGeometry x="0.0219" y="-85" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="990" />
+              <mxPoint x="245" y="990" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-25" value="SAML&lt;br&gt;Identity&lt;br&gt;provider" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-26" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;(2) Redirect idP&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m4Xngc8BHBEE5lB-nZ08-27" target="m4Xngc8BHBEE5lB-nZ08-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="866" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4Xngc8BHBEE5lB-nZ08-27" value="SAML Service provider&lt;br&gt;(Application)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-1" value="LDAP db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="165" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-6" value="&lt;h1&gt;!!!&lt;/h1&gt;&lt;p&gt;a trust between SAML identity provider and SAML service provider (application) so that the provider can understand SAML response.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="970" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-25" value="www.learning.com" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-11" target="PxDoI1PUcP5NgiqhRPwL-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-26" value="www.linkedin.com" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-11" target="PxDoI1PUcP5NgiqhRPwL-23">
+          <mxGeometry x="0.5" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="1660" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-11" value="User/Client" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1360" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-13" target="PxDoI1PUcP5NgiqhRPwL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-14" value="Learning&lt;br&gt;DB" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1355" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-18" target="PxDoI1PUcP5NgiqhRPwL-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-18" value="Linkedin API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-19" value="Linkedin&lt;br&gt;Identity&lt;br&gt;db" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1550" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-20" value="Linkedin&lt;br&gt;app db" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="1635" width="95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-21" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;publish learning certificate&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF0000;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-13" target="PxDoI1PUcP5NgiqhRPwL-18">
+          <mxGeometry x="-0.3023" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-13" value="Learning App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1355" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PxDoI1PUcP5NgiqhRPwL-23" target="PxDoI1PUcP5NgiqhRPwL-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-23" value="Linkedin UI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxDoI1PUcP5NgiqhRPwL-27" value="OAuth 2.0&lt;br&gt;Authorization Server" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="1">
+          <mxGeometry x="405" y="1550" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lPAbWJnHNHZqox1zwJde" name="Page-2">
+    <mxGraphModel dx="954" dy="-508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-1" value="User Agent" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1150" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-2" value="Application" style="image;html=1;image=img/lib/clip_art/computers/Virtual_Application_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="260" y="1135" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-3" value="Authorization Server" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Conditional_Access.svg;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1150" width="56.00000000000001" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-4" value="API" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.servers;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1150" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-5" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1" target="kNpcf7IsgYrJ3FP-1oaR-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="85" y="1640" as="sourcePoint" />
+            <mxPoint x="110" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-6" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="kNpcf7IsgYrJ3FP-1oaR-11" target="kNpcf7IsgYrJ3FP-1oaR-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="299.5" y="1445" as="sourcePoint" />
+            <mxPoint x="299.5" y="1215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1" target="kNpcf7IsgYrJ3FP-1oaR-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1640" as="sourcePoint" />
+            <mxPoint x="547.5" y="1218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-8" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="799" y="1720" as="sourcePoint" />
+            <mxPoint x="798.5" y="1228" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-9" value="I&#39;d like to sign in" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1270" as="sourcePoint" />
+            <mxPoint x="280" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-12" value="generate a secret and hash" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="kNpcf7IsgYrJ3FP-1oaR-11" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="1280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="325" y="1280" />
+              <mxPoint x="325" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-13" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNpcf7IsgYrJ3FP-1oaR-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="1720" as="sourcePoint" />
+            <mxPoint x="300" y="1215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="295" y="1300" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-14" value="use this hash and grant me access: redirect" style="endArrow=none;html=1;rounded=0;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1360" as="sourcePoint" />
+            <mxPoint x="280" y="1360" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-15" value="I&#39;d like to sign in for this app, with this hash" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1400" as="sourcePoint" />
+            <mxPoint x="520" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-17" value="prompt login window with user consent" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1" target="kNpcf7IsgYrJ3FP-1oaR-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1410" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="570" y="1410" />
+              <mxPoint x="570" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-18" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="540" y="1430" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-19" value="login with username/password" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1470" as="sourcePoint" />
+            <mxPoint x="520" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-20" value="here is a temp code the app can use" style="endArrow=none;html=1;rounded=0;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1520" as="sourcePoint" />
+            <mxPoint x="520" y="1520" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-22" value="Use this temp code" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1560" as="sourcePoint" />
+            <mxPoint x="280" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-23" value="temp code + secret, get token" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1590" as="sourcePoint" />
+            <mxPoint x="520" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-24" value="verify the code, the secret vs hash" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1" target="kNpcf7IsgYrJ3FP-1oaR-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="533" y="1600" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="563" y="1600" />
+              <mxPoint x="563" y="1630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-25" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="533" y="1620" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-26" value="access token" style="endArrow=none;html=1;rounded=0;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="1670" as="sourcePoint" />
+            <mxPoint x="520" y="1670" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNpcf7IsgYrJ3FP-1oaR-27" value="API call with access token" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="1710" as="sourcePoint" />
+            <mxPoint x="760" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

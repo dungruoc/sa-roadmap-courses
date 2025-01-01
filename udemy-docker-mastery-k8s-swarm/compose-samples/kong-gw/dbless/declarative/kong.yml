@@ -1,0 +1,21 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: example_service
+    url: https://api.restful-api.dev/objects
+    routes:
+    - name: example_route
+      paths:
+      - /mock-objects
+  # - name: tcp_stream_service
+  #   url: tcp://192.168.1.7:8000
+  #   read_timeout: 2147483646
+  #   connect_timeout: 2147483646
+  #   write_timeout: 2147483646
+  #   routes:
+  #     - name: tcp_route
+  #       protocols: ["tcp"]
+  #       destinations:
+  #         - ip: 192.168.1.7
+  #           port: 80
