@@ -1,16 +1,14 @@
-version: '3.1'
-
 services:
     kong-db:
-      image: postgres:13
-      container_name: kong-database
+      image: postgres:13-alpine
+      container_name: kong-db
       networks:
         - kong-net
       volumes:
         - kong-datastore:/var/lib/postgresql/data
       environment:
         - "POSTGRES_USER=kong"
-        - "POSTGRES_DB=kong-gw"
+        - "POSTGRES_DB=kong_gw"
         - "POSTGRES_PASSWORD=kongpass"
       expose:
         - 5432
@@ -23,16 +21,15 @@ services:
       command: kong migrations bootstrap --vv
       environment:
         KONG_DATABASE: postgres
-        KONG_PG_HOST: kong-database
+        KONG_PG_HOST: kong-db
         KONG_PG_PORT: 5432
-        KONG_PG_DATABASE: kong-gw
+        KONG_PG_DATABASE: kong_gw
         KONG_PG_USER: kong
         KONG_PG_PASSWORD: kongpass
-      # entrypoint: sh -c "sleep 100 && kong migrations bootstrap --vv"
       networks:
         - kong-net
 
-    kong-gw:
+    kong-gateway:
         image: local/kong:2.8-oidc
         build:
           dockerfile: ./Dockerfile
@@ -41,9 +38,9 @@ services:
           - kong-db
         environment:
           KONG_DATABASE: postgres
-          KONG_PG_HOST: kong-database
+          KONG_PG_HOST: kong-db
           KONG_PG_PORT: 5432
-          KONG_PG_DATABASE: kong-gw
+          KONG_PG_DATABASE: kong_gw
           KONG_PG_USER: kong
           KONG_PG_PASSWORD: kongpass
           KONG_PROXY_ACCESS_LOG: /dev/stdout
@@ -62,7 +59,7 @@ services:
           - kong-net
 
     keycloak-db:
-      image: postgres:13
+      image: postgres:13-alpine
       container_name: keycloak-db
       volumes: 
         - keycloak-datastore:/var/lib/postgresql/data
@@ -93,39 +90,37 @@ services:
         KEYCLOAK_ADMIN:           admin
         KEYCLOAK_ADMIN_PASSWORD:  admin
 
+    konga-db:
+      image: postgres:13-alpine
+      container_name: konga-db
+      networks:
+        - kong-net
+      volumes:
+        - konga-datastore:/var/lib/postgresql/data
+      environment:
+        - "POSTGRES_USER=konga"
+        - "POSTGRES_DB=konga"
+        - "POSTGRES_PASSWORD=konga"
+      expose:
+        - 5432
 
-
-    # konga-prepare:
-    #     image: pantsel/konga
-    #     container_name: konga-prepare
-    #     command: "-c prepare -a postgres -u postgresql://kong:kongpass@kong-database:5432/konga"
-    #     networks:
-    #         - kong-net
-    #     links:
-    #         - kong-db
-    #     depends_on:
-    #         - kong-db
-
-    # konga:
-    #     image: pantsel/konga
-    #     container_name: konga
-    #     networks:
-    #       - kong-net
-    #     ports:
-    #       - 1337:1337
-    #     links:
-    #       - kong-gw
-    #       - kong-db
-    #     environment:
-    #       DB_ADAPTER: postgres
-    #       DB_HOST: kong-database
-    #       DB_PORT: 5432
-    #       DB_USER: kong
-    #       DB_PASSWORD: kongpass
-    #       DB_DATABASE: konga
-    #       KONGA_HOOK_TIMEOUT: 120000
-    #       NODE_ENV: production
-
+    konga:
+      image: pantsel/konga:0.14.9
+      ports:
+        - 1337:1337
+      links:
+        - kong-gateway:kong-gateway
+      container_name: konga
+      environment:
+        DB_ADAPTER: postgres
+        DB_HOST: konga-db
+        DB_PORT: '5432'
+        DB_USER: konga
+        DB_PASSWORD: konga
+        DB_DATABASE: konga
+        NODE_ENV: development
+      networks:
+        - kong-net
 
 
 networks:
@@ -135,3 +130,4 @@ networks:
 volumes:
   kong-datastore:
   keycloak-datastore:
+  konga-datastore:

@@ -1,3 +1,4 @@
 *.pdf
 *.drawio.bkp
 *.pem
+.DS_Store
