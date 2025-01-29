@@ -437,3 +437,60 @@ my-first-app    second_topic    2          10              10              0    
 
 - Reassign a small subset of the partitions from one consumer to another
 - Can go through several iterations to find a stable assignment
+
+# Kafka extended APIs
+
+- Kafka producer and consumer are considered **low-level**
+- Kafka has new APIs, higher level
+  - Kafka Connect for External Source -> Kafka and Kafka -> External Sink
+  - Kafka streams solves transformations Kafka -> Kafka
+  - Schema Registry helps using Schema in Kafka
+
+## Why Kafka Connect
+
+- Programmers always want to import data from the same sources
+  - Databases, JDBC, FTP, IoT, Twitter, SAP HANA, Saleforce
+- Programmers always want to store data into the same sinks
+  - Databases, Elasticsearch, S3, JDBC
+
+![Kafka Connect](images/kafka-connect.png)
+
+## Kafka schema registry
+
+- Kafka would not verify data schema. Its responsibility is just to log data into partitions.
+- The schema reistry must be a separate component
+- Producers and Consumers need to be able to talk to it.
+
+
+![Kafka APIs](images/kafka-apis.png)
+
+# Real world insights
+
+## Partition count & replica factor
+
+- more partitions:
+  - better parallelism, better throughput
+  - better leverage of brokers if there are many
+- practical
+  - small cluster (< 6 brokers): 3 x number of brokers
+  - large cluster (> 12 brokers): 2 x number of brokers
+- more replication factor:
+  - better durability
+  - better availability
+  - more latency (acks=all)
+  - more resources (disk, networking)
+- practical
+  - 3 as a started (cluster must have at least 3 brokers too)
+
+## Topic naming convention
+
+database catalog like naming
+
+```
+<message type>.<dataset name>.<data name>.<data format>
+```
+
+- **message type**: logging, queuing, user, ..
+- **dataset name**: equivalent to database name in RDBMS
+- **data name**: equivalent to table name
+- **data format**: avro, parquet, json, protobuf, csv, ...
