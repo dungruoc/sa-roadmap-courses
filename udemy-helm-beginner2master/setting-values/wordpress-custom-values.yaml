@@ -1,0 +1,18 @@
+wordpressUsername: helm_course
+
+# @param existingSecret Name of existing secret containing WordPress credentials
+# NOTE: Must contain key `wordpress-password`
+#NOTE: When it's set, the `wordpressPassword` parameter is ignored
+
+existingSecret: custom-wp-credentials
+
+# replicaCount: 3
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+
+
+service:
+  type: NodePort

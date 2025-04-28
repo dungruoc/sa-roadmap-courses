@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cheddar
+  name: cheddar
+  namespace: default
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: cheddar
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: stilton
+  name: stilton
+  namespace: default
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: stilton
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: wensleydale
+  name: wensleydale
+  namespace: default
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: wensleydale

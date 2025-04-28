@@ -1,0 +1,46 @@
+test: I am a string
+environment: staging
+
+## @param customName Custom name of the deployment
+##        Defaults to {{ .Release.Name }}-{{ .Chart.Name }}
+customName: ''
+
+# Replica count
+#
+## @param replicaCount Number of Nginx replica to deploy
+replicaCount: 3
+
+## Setting for NGINX image
+## @param image.name NGINX image name to use
+## @param image.tag INGINX image tag to use
+image:
+  name: nginx
+  tag: "1.27.0"
+
+## NGINX container port
+## @param containerPorts.http The exposed http port of NGINX container 
+containerPorts:
+  http: 80
+
+## Setting for NGINX container securityContext
+##
+## @param securityContext.enabled
+## @param securityContext.runAsUser
+## @param securityContext.fsGroup
+
+securityContext:
+  enabled: true
+  runAsUser: 1000
+  fsGroup: 2000
+
+## Setting for NGINX service
+##
+## @param services["*"].type the type of service in front of NGINX
+## @param services["*"].port the port where the service receives request
+services:
+  svc1:
+    type: ClusterIP
+    port: 80
+  svc2:
+    type: NodePort
+    port: 30007

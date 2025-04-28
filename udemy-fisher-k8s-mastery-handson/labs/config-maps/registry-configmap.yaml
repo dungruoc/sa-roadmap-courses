@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: registry
+  namespace: default
+
+data:
+  http.addr: 0.0.0.0:80

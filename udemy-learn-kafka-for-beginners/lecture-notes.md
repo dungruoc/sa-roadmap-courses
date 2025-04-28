@@ -494,3 +494,73 @@ database catalog like naming
 - **dataset name**: equivalent to database name in RDBMS
 - **data name**: equivalent to table name
 - **data format**: avro, parquet, json, protobuf, csv, ...
+
+## Case study - MovieFlix
+
+- User can watch TV shows and movies on demand
+- Capabilities:
+  - make sure users can resume the video where they left off
+  - build a user profile in realtime
+  - recommend the next movie/show in realtime
+  - store all the data in analytics store
+
+
+![MovieFlix](images/movieflix-case-study.png)
+
+- Ideas
+  - current position topic:
+    - multiple producers
+    - should be highly distributed, partitions > 30
+    - user_id could be a key -> ordered by user_id
+  - recommendation topic
+    - smaller volume, partitions
+    - user_id could be a key too.
+
+## Case study - GetTaxi
+
+- Match people and taxi drivers in realtime
+- Capabilities
+  - user should match with a free close driver
+  - pricing should depend on if the high demands/free drivers
+  - all riding data should be stored in an analytics store for BI
+
+![Get Taxi](images/gettaxi-case-study.png)
+
+## Case study - Big Data
+
+![Big Data](images/big-data-architecture.png)
+
+## Case study - Logging and metrics aggregation
+
+![Logs & Metrics](images/logs-metrics-case-study.png)
+
+# Kafka in the Enterprise
+
+- multiple data-center/availability-zone brokers
+- monitoring
+- security
+  - in-flight encryption (TLS, ...)
+  - in-rest encryption
+  - authentication
+  - authorization (ACL) to allow who can access what on topics
+- Other components
+  - Kafka Connect cluster
+  - Kafka Schema Registry
+  - UI tools
+  - Admin tools
+- alternatives: managed Kafka clusters as service
+  - Amazon MSK, Confluent
+
+
+# Advance Topic Configurations
+
+## Changing a topic configuration
+
+Some topics may need different parameters than the defaults
+- replication factor
+- number of partitions
+- message size
+- compression level
+- log cleanup policy
+- min insynch replicas
+- ...

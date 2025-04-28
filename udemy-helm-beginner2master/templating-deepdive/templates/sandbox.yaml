@@ -1,0 +1,6 @@
+list: {{ list 1 2 3 4 5 | toYaml | nindent 2 }}
+
+valList:
+  values: {{ list "a" "b" "c" | toYaml | nindent 4 }}
+
+my-dict: {{ dict "primitive" "my string" "complex" (dict "key1" "value1" ) | toYaml | nindent 2 }}

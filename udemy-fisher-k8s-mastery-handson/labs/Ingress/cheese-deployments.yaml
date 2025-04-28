@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cheddar
+  name: cheddar
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cheddar
+  template:
+    metadata:
+      labels:
+        app: cheddar
+    spec:
+      containers:
+      - image: bretfisher/cheese:cheddar
+        name: chese
+      restartPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: stilton
+  name: stilton
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stilton
+  template:
+    metadata:
+      labels:
+        app: stilton
+    spec:
+      containers:
+      - image: bretfisher/cheese:stilton
+        name: chese
+      restartPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: wensleydale
+  name: wensleydale
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wensleydale
+  template:
+    metadata:
+      labels:
+        app: wensleydale
+    spec:
+      containers:
+      - image: bretfisher/cheese:wensleydale
+        name: chese
+      restartPolicy: Always

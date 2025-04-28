@@ -1,0 +1,6 @@
+apiVersion: v2
+name: nginx
+version: 0.1.0
+description: A Helm chart to deploy nginx
+type: application
+appVersion: 1.27.0
